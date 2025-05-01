@@ -14,5 +14,17 @@
         <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
         <h1>Heheheh, siii!!🥰 </h1>
     </div>
+    <div class="music-container"></div>
+    <script>
+        document.body.classList.remove("container");
+        var bgMusicURL = 'deLaNada.mp3'; 
+        var bgMusicControls = true;
+        if (bgMusicURL) {
+            document.querySelector('.music-container').innerHTML += `
+            <audio src="${bgMusicURL}" ${bgMusicControls? 'controls': ''} hidden='true' autoplay loop>    
+            </audio>
+            `;
+        }
+    </script>
 </body>
 </html>
